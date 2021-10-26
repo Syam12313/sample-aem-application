@@ -1,0 +1,31 @@
+
+<h1> USERINFO </h1>
+<div 
+
+<br>
+<div data-sly-use.model="${'com.adobe.aem.guides.wknd.core.models.Userinfo'}">
+
+ 1.User Name : <h4 data-sly-test="${model.Username}"> ${model.Username}</h4>
+ <br>
+2.Password :<h4 data-sly-test="${model.Password}"> ${model.Password}</h4>
+ 3.Age :<h4 data-sly-test="${model.Age}"> ${model.Age}</h4>
+ 4.Address :<h4 data-sly-test="${model.Address}"> ${model.Address}</h4>
+ 5.Color :<h4 data-sly-test="${model.Color}"> ${model.Color}</h4>
+
+
+<ul data-sly-list.phonenumbers="${model.phonenumber}">
+	6.AddPhoneNumber : <li>  ${phonenumbers.addphonenumber} </li>
+
+
+</ul>
+
+</div>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+
+Title : ${resource.title}
+<br>
+Owner For The Factories: ${resource.owner}
+<div 
+
+<br>
+<div data-sly-use.model="${'com.adobe.aem.guides.wknd.core.models.Props'}">
+<h1 data-sly-test="${model.title}"> ${model.title}</h1>
+
+<ul data-sly-list.factoriesItem="${model.factories}">
+	<li>${factoriesItem.appleFactory} </li>
+    <br>
+    <li>${factoriesItem.goodsFactory} </li>
+
+</ul>
+
+</div>
+
+
+
